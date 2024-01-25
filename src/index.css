@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300;400;500;700&family=Grape+Nuts&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Hanken Grotesk;
+}
+
+
+h1,h3,h2,h4,h5,h6 {
+    font-family: Chivi Mono;
+}
+
+h1 {
+    font-size: 2.5rem;
+
+}
+
+h3 {
+    font-size: 1.5rem;
+
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
