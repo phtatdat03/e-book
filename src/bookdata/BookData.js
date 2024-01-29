@@ -71,22 +71,22 @@ export const BooksData = [
 
     {
         id: 7,
-        book_name:"",
-        book_des:"",
-        book_url:"",
-        length:"922 trang",
-        author_name:"J.K. Rowling",
-        price:"310000",
+        book_name:"Nhà Giả Kim",
+        book_des:"Nicholas Flamel là một nhà giả kim, sinh vào năm 1330, nhờ học được phép thuật bất tử từ cuốn sách Codex của pháp sư Abraham, ông sống đến đầu thế kỷ XXI và gắn liền định mệnh của mình với sự tồn tại của Codex. Bọn Elder Đen Tối, thông qua tiến sĩ John Dee muốn đoạt lấy để đẩy loài người vào thời đại hồng hoang. Cuộc chiến đấu giữa Flamel Bất Tử và Dee Đen Tối diễn ra giữa thời đại của wifi, ipod, internet, laptop và điện thoại di động đã vô tình lôi cuốn sự tham gia của hai chị em sinh đôi Josh và Sophie Newman. Sự xuất hiện của 2 chị em khá trùng hợp với lời tiên đoán trong Codex đã có từ hàng nghìn năm trước của Abraham. Trong cuộc chiến đấu giữa Flamel Bất Tử và Dee Đen Tối, hai chị em, mà trước mắt là cô chị Sophie đã được đánh thức những năng lực tiềm ẩn. Nhờ sự đánh thức, Sophie đã hỗ trợ đắc lực cho Flamel trong việc chống lại bè lũ Elder Đen Tối thông qua bàn tay của Dee. Cuộc chiến đấu không cân sức giữa các thiện và điều ác, bước đầu trên đất Mỹ, phe thiện đã dành được thắng lợi và mở ra cuộc chiến đấu mới ở Paris, châu Âu. Đây là cuốn sách lần đầu tiên Nhà xuất bản Trẻ mua bản quyền từ bản thảo và sẽ phát hành bản tiếng Việt cùng với bản tiếng Anh và các ngôn ngữ khác đồng thời với 29 nước trên thế giới.",
+        book_url:"https://www.nxbtre.com.vn/Images/Book/copy_14_nxbtre_full_14372018_033758.jpg",
+        length:"468 trang",
+        author_name:"Michael Scott",
+        price:"120 000",
     },
 
     {
         id: 8,
-        book_name:"",
+        book_name:"Peter Pan Cậu bé biết bay",
         book_des:"",
-        book_url:"",
-        length:"922 trang",
-        author_name:"J.K. Rowling",
-        price:"310000",
+        book_url:"https://www.nxbtre.com.vn/Images/Book/nxbtre_full_12302021_043033.jpg",
+        length:"128 trang",
+        author_name:"J.M.Barrie",
+        price:"50 000",
     },
 
     {
