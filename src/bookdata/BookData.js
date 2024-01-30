@@ -7,6 +7,7 @@ export const BooksData = [
         length:"366 trang",
         author_name:"J.K. Rowling",
         price:"150 000",
+
     },
 
     {
@@ -17,6 +18,7 @@ export const BooksData = [
         length:"430 trang",
         author_name:"J.K. Rowling",
         price:"150 000",
+        
     },
 
     {
@@ -91,71 +93,71 @@ export const BooksData = [
 
     {
         id: 9,
-        book_name:"",
-        book_des:"",
-        book_url:"",
-        length:"922 trang",
+        book_name:"QUIDDITCH Qua các thời đại",
+        book_des:"Thế giới phù thủy của Harry Potter một lần nữa hé cửa cho độc giả tò mò: Môn Quidditch mà Harry và Ron đều say mê bắt nguồn từ đâu? Luật chơi thế nào? Đội Đại bác Chudney mà Ron có áp phích dán đầy phòng ngủ có gì lợi hại? Mà quan trọng nhứt: Làm sao cụ Dumbledore mượn được cuốn sách ai cũng thích này từ tay bà thủ thư Pinch để cho dân Muggle đọc ké kia chớ? Một cuốn sách không thể thiếu của các Potterhead.",
+        book_url:"https://www.nxbtre.com.vn/Images/Book/nxbtre_full_10412019_044137.jpg",
+        length:"78 trang",
         author_name:"J.K. Rowling",
-        price:"310000",
+        price:"110 000",
     },
 
     {
         id: 10,
-        book_name:"",
-        book_des:"",
-        book_url:"",
-        length:"922 trang",
+        book_name:"Những sinh vật huyển bí và nơi tìm ra chúng",
+        book_des:"Thế giới phù thủy hẳn sẽ nhàm chán đi rất nhiều nếu không có Nhân Mã, Nhân Ngư, Bạch Kỳ Mã, Rồng... và hàng trăm loài sinh vật huyền bí đầy sức mạnh. Thế nhưng chúng sống ở đâu, tập tính ra sao? Thật thú vị khi nhận ra những sinh vật từng được nhắc đến trong bộ Harry chính truyện, cũng như làm quen với những sinh vật mới tinh! Một tác phẩm không thể thiếu đối với các Potterhead",
+        book_url:"https://www.nxbtre.com.vn/Images/Book/nxbtre_full_10382019_043819.jpg",
+        length:"82 trang",
         author_name:"J.K. Rowling",
-        price:"310000",
+        price:"125 000",
     },
 
     {
         id: 11,
-        book_name:"",
-        book_des:"",
-        book_url:"",
-        length:"922 trang",
+        book_name:"Những chuyện kể của Beedle Người Hát Rong",
+        book_des:"Những chuyện kể của Beedle Người Hát Rong gồm năm câu chuyện thần tiên với những phép thuật lạ lùng độc đáo, những tình huống căng thẳng hồi hộp sẽ làm say mê độc giả của mọi lứa tuổi. Đặc biệt sau mỗi câu chuyện có phần bình luận của giáo sư Albus Dumbledore. Với những suy nghĩ sâu sắc ý nhị và phần hé lộ thông tin về cuộc sống tại trường Hogwarts, những lời bàn của giáo sư hy vọng sẽ được dân Muggles và giới phù thủy yêu thích như nhau. Sách có nhiều minh họa đẹp, rất được yêu thích trong giờ đọc sách trước khi ngủ ở các gia đình phù thủy nhiều thế kỷ qua.",
+        book_url:"https://www.nxbtre.com.vn/Images/Book/nxbtre_full_10462019_044611.jpg",
+        length:"128 trang",
         author_name:"J.K. Rowling",
-        price:"310000",
+        price:"150 000",
     },
 
     {
         id: 12,
-        book_name:"",
-        book_des:"",
-        book_url:"",
-        length:"922 trang",
+        book_name:"Harry Potter - Kỳ Thư Phù Thủy",
+        book_des:"Đây là cuốn sách pháp thuật chính thức đầu tiên đi kèm bộ truyện Harry Potter của nhà văn J.K. Rowling - tổng hợp đầy đủ nhất những danh sách, biểu đồ, bản đồ và tất tần tật những thứ có phép thuật. Được in bìa cứng, 208 trang minh họa màu toàn bộ, đây là một món quà kỳ diệu cho nhiều thế hệ người hâm mộ của bộ tiểu thuyết nhiệm màu này! Những trang sách minh họa rực rỡ sẽ đưa bạn vút bay vào thế giới phù thủy của Harry Potter, khám phá những địa điểm pháp thuật phi thường, nghiên cứu đủ loại bùa chú quyền năng và phép thuật kỳ quái, đối đầu với các sinh vật huyền bí và gặp gỡ các pháp sư, phù thủy tên tuổi.  Bảy chương sách sẽ giúp bạn sống lại những khoảnh khắc khó quên với các danh sách lý thú, len lỏi vào mọi ngõ ngách qua những bản đồ cùng tranh vẽ sống động, và khám phá mọi món ăn cùng mọi vật dụng ma thuật thú vị mà bạn từng mơ tới. Tổng hợp tất cả những điều cần biết từ tập Harry Potter và Hòn đá Phù thủy cho đến Bảo bối Tử thần, đây là cuốn bách khoa toàn thư đầy ắp sự thật thú vị về thế giới phù thủy được trình bày đầy mê hoặc bởi bảy họa sĩ minh họa tuyệt vời trên khắp thế giới. Đặc biệt, sách có sự tham gia của họa sĩ Phạm Quang Phúc, cũng là người minh họa bìa. Điều này đánh dấu sự vươn ra quốc tế của Việt Nam theo nhiều mặt: lần đầu một họa sĩ Việt Nam tham gia một dự án sách có quy mô toàn thế giới, và đây là cuốn sách đầu tiên do NXB Trẻ phối hợp thực hiện với đối tác để in ở nước ngoài và phát hành cùng lúc với thế giới vào ngày 10/10/2023 (34 phiên bản bằng 34 ngôn ngữ khác nhau).",
+        book_url:"https://www.nxbtre.com.vn/Images/Book/nxbtre_full_03352023_023558.jpg",
+        length:"208 trang",
         author_name:"J.K. Rowling",
-        price:"310000",
+        price:"555 000",
     },
 
     {
         id: 13,
-        book_name:"",
-        book_des:"",
-        book_url:"",
-        length:"922 trang",
-        author_name:"J.K. Rowling",
-        price:"310000",
+        book_name:"Vũ trụ trong vỏ hạt dẻ",
+        book_des:"Stephen Hawking, một trong những nhà khoa học có ảnh hưởng nhất trong thời đại chúng ta, là một biểu tượng trí tuệ, được biết đến không chỉ vì sự mạo hiểm trong các ý tưởng, mà còn vì sự rõ ràng và hóm hỉnh mà ông thể hiện. Trong tác phẩm này, Hawking đưa chúng ta đến đỉnh cao của vật lý lý thuyết, nơi mà sự thật thường xa lạ hơn là hư cấu, để giải thích theo từ ngữ bình dân về các nguyên tắc kiểm soát vũ trụ của chúng ta. Giống như nhiều người trong cộng đồng vật lý lý thuyết, Giáo sư Hawking luôn tìm cách khám phá chén thánh của khoa học – Lý thuyết về mọi thứ. Với phong cách dễ tiếp cận và dí dỏm của mình, ông hướng dẫn chúng ta tiến từng bước một để khám phá bí mật của vũ trụ – từ siêu trọng lực đến siêu đối xứng, từ lý thuyết lượng tử đến lý thuyết M, từ phép toàn ảnh đến tính đối ngẫu. Và ông đưa chúng ta đến hậu trường của một trong những cuộc phiêu lưu trí tuệ thú vị nhất của ông khi tìm cách “kết hợp Lý thuyết tương đối tổng quát của Einstein và ý tưởng đa lịch sử của Richard Feynman thành một lý thuyết thống nhất hoàn chỉnh sẽ mô tả mọi thứ xảy ra trong vũ trụ.”",
+        book_url:"https://www.nxbtre.com.vn/Images/Book/nxbtre_full_15582022_025816.jpg",
+        length:"254 trang",
+        author_name:"Stephen HawKing",
+        price:"108 000",
     },
 
     {
         id: 14,
-        book_name:"",
-        book_des:"",
-        book_url:"",
-        length:"922 trang",
-        author_name:"J.K. Rowling",
-        price:"310000",
+        book_name:"Lược sử thời gian",
+        book_des:"Tò mò là một trong những phẩm chất bẩm sinh vô cùng quan trọng của chúng ta, và những vấn đề như Bản chất của vũ trụ là gì? Vũ trụ từ đâu ra? Chúng ta đến từ đâu và đóng vai trò gì trong vũ trụ? Có giới hạn cho sự nhận thức của con người không?... là những câu hỏi mà biết bao nhiêu thế hệ con người đã đặt ra dưới dạng này hoặc dạng khác từ khi bắt đầu biết nhận thức và suy ngẫm về thế giới này. Tất cả những vấn đề được nên ra trong tác phẩm Lược sử thời gian như Vũ trụ giãn nở, Lỗ đen, Nguồn gốc và số phận của vũ trụ, Mũi tên thời gian… đều là mong muốn của tác giả để phần nào trả lời được những câu hỏi đó, và hướng tới việc giải thích các giai đoạn lịch sử của toàn bộ vũ trụ. Bằng ngôn ngữ sáng sủa, lập luận chặt chẽ rất thuyết phục, và sự dí dỏm rất riêng, tác giả Stephen Hawking đặt ra cho mình nhiệm vụ diễn tả những điều phức tạp nhất trong vật lý học một cách dễ hiểu đối với mọi người, không dùng bất kỳ công thức toán học nào, trừ phương trình nổi tiếng của Einstein: E = mc2",
+        book_url:"https://www.nxbtre.com.vn/Images/Book/nxbtre_full_20002022_040049.jpg",
+        length:"286 trang",
+        author_name:"Stephen HawKing",
+        price:"115 000",
     },
 
     {
         id: 15,
-        book_name:"",
-        book_des:"",
-        book_url:"",
+        book_name:"Lược sử đời tôi",
+        book_des:"Stephen Hawking đã khiến độc giả trên khắp thế giới phải sửng sốt bởi loạt sách rất được yêu thích về chủ đề khám phá những bí ẩn của vũ trụ. Giờ đây, có lẽ là lần đầu tiên nhà vũ trụ học thông thái nhất trong thời đại của chúng ta đang nhìn lại cuộc đời mình cũng như quá trình tiến bộ về tư duy khoa học của bản thân. Tác phẩm Lược sử đời tôi thuật lại chặng đường gần như không tưởng của Stephen Hawking, từ thời niên thiếu ở London sau chiến tranh cho đến giai đoạn ông trở nên nổi tiếng trên khắp thế giới và được ca ngợi. Với một lượng lớn hình ảnh chưa được công bố cùng lời chú thích ngắn gọn, hóm hỉnh và chân thật, Lược sử đời tôi đã đưa độc giả đến với một Stephen Hawking được nói đến rất ít trong những cuốn sách trước đây: một cậu học sinh luôn tọc mạch được các bạn cùng lớp đặt cho biệt danh Einstein; một tay cá cược khi đã từng đánh cược với một đồng nghiệp về sự tồn tại của một lỗ đen đặc biệt, và một người cha, người chồng trẻ đang đấu tranh để có được một vị trí trong giới vật lý và vũ trụ học. Với sự khiêm tốn và hóm hỉnh chỉ có ở riêng Hawking, ông đã cho độc giả thấy được những thách thức mà ông phải đối mặt sau khi bị chẩn đoán đoán nhiễm chứng bệnh ALS ở tuổi hai mươi mốt. Miêu tả về sự tiến bộ của bản thân như một nhà tư tưởng, ông giải thích làm thế nào mà cuộc sống rất có thể phải sớm kết thúc của ông lại thôi thúc ông tiến lên để đạt được những bước đột phá về trí tuệ, đồng thời cũng nói về nguồn gốc kiệt tác Lược sử thời gian – một trong những cuốn sách tiêu biểu của thế kỷ 20. Tinh tường, sâu sắc và khéo léo, Lược sử đời tôi mở ra cánh cửa cho chúng ta tiến vào vũ trụ của chính Hawking.  ",
+        book_url:"https://www.nxbtre.com.vn/Images/Book/copy_16_NXBTreStoryFull_20532015_045330.jpg",
         length:"922 trang",
-        author_name:"J.K. Rowling",
-        price:"310000",
+        author_name:"Stephen HawKing",
+        price:"310 000",
     }
 ]

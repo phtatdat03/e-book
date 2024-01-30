@@ -2,7 +2,9 @@ import React from "react";
 import './productList.style.css';
 import ListCard from "../../cards/product-list-card/cardList";
 import { BooksData } from "../../../bookdata/BookData";
-
+import { useState } from "react";
+import { Carousel } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ProductList = () => {
     return (
@@ -11,7 +13,7 @@ const ProductList = () => {
                 <h2>Bán chạy</h2>
 
                 <div className="list-container">
-                    {BooksData.slice(0,3).map((book) => {
+                    {BooksData.slice(0,5).map((book) => {
                         return (
                             <ListCard bookData={book}/>
                         )
@@ -21,5 +23,7 @@ const ProductList = () => {
         </div>
     )
 }
+
+
 
 export default ProductList;
