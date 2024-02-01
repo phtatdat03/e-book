@@ -1,17 +1,30 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useContext} from "react";
 import './DetailsSection.style.css'
 import BookDetailImg from '../../../assets/book-image/harry_potter_1.jpg'
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { BooksData } from "../../../bookdata/BookData";
-
+import { CartContext, UserContext } from "../../../App";
 const DetailsSection = () => {
     const { id } = useParams();
     const [bookData, setBookData] = useState({});
+    const user = useContext(UserContext);
+    const {cartItems, setCartItems} = useContext(CartContext);
+    const navigate = useNavigate();
 
     useEffect(() => {
         let newData = BooksData.filter((book) => book.id === parseInt(id));
         setBookData(newData[0])
     },[])
+
+    const handleAddtoCart = () => {
+        if(user) {
+            setCartItems([...cartItems, bookData]);
+            alert("Thêm vào giỏ hàng thành công!!");
+        } else {
+            navigate('/login');
+            alert("Bạn cần có tài khoản để có thể mua hàng!!");
+        }
+    }
 
     return(
         <section className="detail-section-container">
@@ -29,7 +42,7 @@ const DetailsSection = () => {
                         <p><b>Nhà xuất bản: Trẻ</b></p>
                         <h3>Giá: {bookData.price}</h3>
 
-                        <a href="#" className="cart-button">Thêm vào giỏ hàng</a>
+                        <a onClick={handleAddtoCart} className="button-primary">Thêm vào giỏ hàng</a>
                     </div>
                 </div>
             </div>

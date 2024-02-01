@@ -1,43 +1,29 @@
 import React from "react";
 import './Login.style.css'
 import Navbar from "../../components/layouts/navbar/Navbar";
-import { Link } from "react-router-dom";
+import AuthBgImg from '../../assets/auth_bg.jpg';
+import AuthForm from "../../components/Forms/authForm/AuthForm";
 const Login = () => {
     return (
-        <section>
-            <Navbar darkTheme={true}/>
-            <div className="login template d-flex justify-content-center align-items-center vh-100 bg-success">
-                <div className=".form_container p-5 rounded bg-white">
-                    <form>
-                        <h3 className="text-center">Đăng nhập</h3>
-                        <div className="mb-2">
-                            <label htmlFor="email">Email: </label>
-                            <input type="text" id="email" placeholder="VD: thanglong@gmail.com" className="form-control"/>
-                        </div>
+        <>
+        <Navbar darkTheme={true}/>
+        <section className="login-container">
+            <div className="login-img-container">
+                <img src={AuthBgImg} alt="authentication-background"/>
+            </div>
 
-                        <div className="mb-2">
-                            <label htmlFor="password">Mật khẩu: </label>
-                            <input type="password" id="password" placeholder="Nhập mật khẩu" className="form-control"/>
-                        </div>
+            <div className="login-content-container">
+                <div className="container">
+                    <div className="content-wrapper">
+                        <h2>Đăng nhập</h2>
+                        <p>Đăng nhập tài khoản của bạn để có thể mua hàng</p>
 
-                        <div className="mb-2">
-                            <input type="checkbox" id="check_remember" className="custom-control custom-checkbox"/>
-                            <label htmlFor="check" className="custom-input-label ms-2">
-                                Lưu đăng nhập
-                            </label>
-                        </div>
-
-                        <div className="d-grid">
-                            <button className="btn btn-dark">Đăng nhập</button>
-                        </div>
-
-                        <p className="text-end mt-2">
-                            Quên <a href="#">mật khẩu?</a> <Link to="/signup" className="ms-2"> Đăng ký</Link>
-                        </p>
-                    </form>
-                </div>  
+                        <AuthForm buttonName="Đăng nhập"/>
+                    </div>    
+                </div>
             </div>
         </section>
+        </>
     )
 }
 

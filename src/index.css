@@ -41,3 +41,20 @@ h3 {
 .align-center {
     align-items: center;
 }
+
+.button-primary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    margin-top: 1rem;
+    box-shadow: 2px 2px 5px #ddd;
+    text-decoration: none;
+    border: none;
+    font-family: Chivo Mono;
+}
+
+.button-primary:hover {
+    background-color: darkgrey;
+    text-decoration: underline;
+}

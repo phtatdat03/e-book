@@ -1,8 +1,7 @@
 import React from "react";
 import Navbar from '../../components/layouts/navbar/Navbar.js'
 import DetailsSection from "../../components/layouts/details-section/DetailsSection.js";
-
-import Footer from '../../components/layouts/footer/footer.js'
+import Footer from '../../components/layouts/footer/Footer.js'
 const BookDetails = () => {
     return (
         <section>

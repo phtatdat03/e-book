@@ -1,9 +1,9 @@
 import React from "react";
-import './BooksPage.style.css'
-import Navbar from '../../components/layouts/navbar/Navbar.js'
-import SearchInputForm from '../../components/Forms/searchInputForm/searchInputForm.js'
+import './BooksPage.style.css';
+import Navbar from '../../components/layouts/navbar/Navbar.js';
+import SearchInputForm from '../../components/Forms/searchInputForm/searchInputForm.js';
 import ListAllproduct from "../../components/layouts/listAllproduct/listAllproduct.js";
-import Footer from '../../components/layouts/footer/footer.js'
+import Footer from '../../components/layouts/footer/Footer.js';
 const BooksPage = () => {
     return (
         <section>

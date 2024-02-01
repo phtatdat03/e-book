@@ -13,9 +13,9 @@ const ProductList = () => {
                 <h2>Bán chạy</h2>
 
                 <div className="list-container">
-                    {BooksData.slice(0,5).map((book) => {
+                    {BooksData.slice(0,4).map((book) => {
                         return (
-                            <ListCard bookData={book}/>
+                            <ListCard key={book.id} bookData={book}/>
                         )
                     })}
                 </div>
