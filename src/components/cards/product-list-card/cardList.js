@@ -20,8 +20,8 @@ const ListCard = ({ bookData }) => {
         //         <Link to={`/book-details/${bookData.id}`}  className="product-list-button">Thêm vào giỏ hàng</Link>
         //     </div>
         // </div>
-        <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={bookData.book_url} />
+        <Card style={{ width: '15rem'}}>
+            <Card.Img variant="top"  src={bookData.book_url}  style={{width:'14.9rem', height:'18rem'}}/>
             <Card.Body>
                 <Card.Title>{bookData.book_name}</Card.Title>
             </Card.Body>
