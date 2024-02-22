@@ -3,7 +3,7 @@ import './BooksPage.style.css';
 import Navbar from '../../components/layouts/navbar/Navbar.js';
 import SearchInputForm from '../../components/Forms/searchInputForm/searchInputForm.js';
 import ListAllproduct from "../../components/layouts/listAllproduct/listAllproduct.js";
-import Footer from '../../components/layouts/footer/Footer.js';
+import Footer from "../../components/layouts/footer/Footer";
 const BooksPage = () => {
     return (
         <section>

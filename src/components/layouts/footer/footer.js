@@ -24,7 +24,7 @@ const Footer = () => {
                     </div>
 
                     <div className="form-group">
-                        <a href="#" className="form-submit">Gửi</a>
+                        <a href="/#" className="form-submit">Gửi</a>
                     </div>
 
                     <p>&copy; 2024. TỦ SÁCH THĂNG LONG</p>

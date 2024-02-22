@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import './listAllproduct.style.css'
 import ListCard from "../../cards/product-list-card/cardList";
-import { BooksData } from "../../../bookdata/BookData";
+import axios from 'axios'
 
 const ListAllproduct = () => {
-    console.log(BooksData)
+    const [books, setBooks] = useState([])
+
+    useEffect(()=> {
+        axios.get('http://localhost:5555/book/get').then(res => {
+          setBooks(res.data)
+        })
+      }, [])
+      
     return (
         <section className="product-list-all-container">
             <div className="container">
                 <div className="grid-container">
-                    { BooksData.map( (book)=> {
+                    { books.map( (book)=> {
                         return (
-                            <div className="grid-item">
+                            <div key={book._id} className="grid-item">
                                 <ListCard bookData = {book}/>
                             </div>  
                         )

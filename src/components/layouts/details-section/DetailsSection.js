@@ -1,24 +1,39 @@
 import React, {useState, useEffect, useContext} from "react";
 import './DetailsSection.style.css'
-import BookDetailImg from '../../../assets/book-image/harry_potter_1.jpg'
 import { useParams, useNavigate } from "react-router-dom";
-import { BooksData } from "../../../bookdata/BookData";
 import { CartContext, UserContext } from "../../../App";
+import handleAddDotPrice from '../../../assets/handleAddDotPrice'
+import axios from "axios";
+
 const DetailsSection = () => {
-    const { id } = useParams();
+    const {slug} = useParams()
     const [bookData, setBookData] = useState({});
+
     const user = useContext(UserContext);
-    const {cartItems, setCartItems} = useContext(CartContext);
+    const {setCartItems} = useContext(CartContext);
     const navigate = useNavigate();
 
     useEffect(() => {
-        let newData = BooksData.filter((book) => book.id === parseInt(id));
-        setBookData(newData[0])
-    },[])
+        axios.get(`http://localhost:5555/book/slug/${slug}`)
+            .then(res => {
+                setBookData(res.data)
+            })
+            .catch(err => console.log(err))
+    }, [slug])
 
-    const handleAddtoCart = () => {
+    const handleAddtoCart = (bookData) => {
+        const title = bookData.title
+        const author = bookData.author
+        const price = bookData.price
+        const imgSrc = bookData.imgSrc
         if(user) {
-            setCartItems([...cartItems, bookData]);
+            axios.post('http://localhost:5555/order/save', {title, author, price, imgSrc})
+            .then(res => {
+                setCartItems(prev => {
+                return [...prev, res.data]
+                })
+            })
+            .catch(err => console.log(err))
             alert("Thêm vào giỏ hàng thành công!!");
         } else {
             navigate('/login');
@@ -30,19 +45,21 @@ const DetailsSection = () => {
         <section className="detail-section-container">
             <div className='container'>
                 <div className="flex-container">
-                    <div className='book-img-container'>
-                        <img src={bookData.book_url} alt="book" />
+                <div className='book-img-container'>
+                        <img src={bookData.imgSrc} alt="book" />
                     </div>
 
                     <div className='book-detail-container'>
-                        <h2>{bookData.book_name}</h2>
-                        <p>Tác giả: {bookData.author_name}</p>
-                        <p className="book-description">Mô tả: {bookData.book_des}</p>
-                        <p><b>Độ dài: {bookData.length}</b></p>
-                        <p><b>Nhà xuất bản: Trẻ</b></p>
-                        <h3>Giá: {bookData.price}</h3>
+                        <h2>{bookData.title}</h2>
+                        <p>Tác giả: {bookData.author}</p>
+                        <p className="book-description">Mô tả: {bookData.description}</p>
+                        <div className="book-description-footer">
+                            <p><b>Độ dài: {`${bookData.length} trang`}</b></p>
+                            <p className="dsBookPrice"><b>Giá: <span style={{color:'red'}}>{`${handleAddDotPrice(bookData.price)} VNĐ`}</span></b></p>
+                            <p><b>Nhà xuất bản: {bookData.publisher}</b></p>
+                        </div>
 
-                        <a onClick={handleAddtoCart} className="button-primary">Thêm vào giỏ hàng</a>
+                        <button onClick={() => handleAddtoCart(bookData)} className="button-primary">Thêm vào giỏ hàng</button>
                     </div>
                 </div>
             </div>

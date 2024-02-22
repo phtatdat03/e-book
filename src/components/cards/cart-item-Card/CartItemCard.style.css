@@ -17,7 +17,11 @@
 
 .cart-item-price {
     padding-top: 1rem;
+}
+
+.cart-item-price span {
     color: red;
+    font-family: Chivi Mono;
 }
 
 .cart-item-content-container p {

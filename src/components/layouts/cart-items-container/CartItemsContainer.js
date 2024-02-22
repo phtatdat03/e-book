@@ -1,11 +1,18 @@
-import React, {useContext} from "react";
+import React, {useContext, useEffect} from "react";
 import './CartItemsContainer.style.css';
 import CartItemCard from "../../cards/cart-item-Card/CartItemCard";
 import {CartContext} from '../../../App';
+import axios from 'axios'
 
 const CartItemsContainer = () => {
 
-    const { cartItems } = useContext(CartContext);
+    const { cartItems, setCartItems } = useContext(CartContext);
+
+    useEffect(()=> {
+        axios.get('http://localhost:5555/order/get').then(res => {
+            setCartItems(res.data)
+        })
+      }, [])
 
     return (
         <section className="cart-items-container">
@@ -13,7 +20,7 @@ const CartItemsContainer = () => {
                 <h2>Giỏ hàng: </h2>
 
                 {cartItems.map((item) => (
-                    <CartItemCard key={item.id} bookData={item}/>
+                    <CartItemCard key={item._id} bookData={item}/>
                 ))}
             </div>
         </section>

@@ -1,5 +1,5 @@
 import React, {useState, useEffect, createContext} from "react";
-import { Routes, Route, BrowserRouter} from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import app from "./firebase/Firebase";
 import {getAuth, onAuthStateChanged} from  "@firebase/auth";
 import HomePage from "./pages/homepage/HomePage";
@@ -28,7 +28,7 @@ const App = () => {
                 setAuthenticatedUser(null);
             }
         })
-    },[])
+    }, [])
 
 
     // useEffect(()=>{
@@ -41,7 +41,7 @@ const App = () => {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/books" element={<BooksPage />} />
                     <Route path="/cart" element={<CartPage />} />
-                    <Route path="/book-details/:id" element={<BookDetailsPage/>} />
+                    <Route path="/book-details/:slug" element={<BookDetailsPage/>} />
 
                     <Route path="/search" element={<SearchPage />} />
                     <Route path="/signup" element={<SignUp />} />

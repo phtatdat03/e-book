@@ -1,7 +1,6 @@
 import React from "react";
 import './SignUp.style.css'
 import Navbar from "../../components/layouts/navbar/Navbar";
-import Footer from "../../components/layouts/footer/Footer";
 import AuthBgImg from '../../assets/auth_bg.jpg';
 import AuthForm from "../../components/Forms/authForm/AuthForm";
 const SignUp = () => {
