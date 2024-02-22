@@ -1,0 +1,101 @@
+
+.grid-1400 {
+    margin: 0 auto;
+    width: 1400px;
+    max-width: 100%;
+}
+
+.admin-header {
+    height: 68px;
+    background-color: aquamarine;
+}
+.ad-header-nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+}
+
+.admin-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-avatar {
+    margin-right: 12px;
+}
+
+.admin-header h1,
+.admin-avatar:hover {cursor: pointer;}
+
+.account {
+    display: flex;
+    flex-direction: column;
+}
+
+.account a {
+    color: #000;
+    text-decoration: none;
+}
+.account a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.admin-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.grid-1400 .addBook {
+    margin: 32px;
+}
+
+.table {
+    margin: 32px;
+}
+
+.table tr .description {
+    max-height: 4.2em; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    text-align: justify;
+    white-space: normal; 
+    line-height: 1.4em; 
+} 
+
+.update, .delete {
+    margin-top: 6px;
+}
+
+/*Modal*/
+.modal-content {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 1000px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    padding: 18px;
+    border-radius: 4px;
+}
+
+.btn-close-form {
+    float: right;
+    margin-right: 12px;
+}

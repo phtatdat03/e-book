@@ -10,6 +10,7 @@ import SignUp from "./pages/SignUpPage/SignUp";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartPage from "./pages/cartpage/CartPage";
 import SearchPage from "./pages/searchpage/searchpage";
+import AdminPage from "./pages/AdminPage/AdminPage";
 
 export const UserContext = createContext({});
 export const CartContext = createContext({});
@@ -39,6 +40,7 @@ const App = () => {
             <CartContext.Provider value={{cartItems, setCartItems}}>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
+                    <Route path="/admin" element={<AdminPage />} />
                     <Route path="/books" element={<BooksPage />} />
                     <Route path="/cart" element={<CartPage />} />
                     <Route path="/book-details/:slug" element={<BookDetailsPage/>} />

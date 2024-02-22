@@ -1,8 +1,6 @@
 import React, {useContext} from "react";
 import './navbar.style.css'
 import { Link, useNavigate } from "react-router-dom";
-import { Container } from "react-bootstrap";
-import { Nav } from "react-bootstrap";
 import {getAuth, signOut} from "firebase/auth";
 import app from "../../../firebase/Firebase";
 import { UserContext } from "../../../App";
@@ -36,7 +34,7 @@ const Navbar = ({darkTheme}) => {
         <nav className="nav-links-container">
             <Link to="/" className="nav-links" id="home">Trang chủ</Link>
             <Link to="/books" className="nav-links" id="books">Sách</Link>
-            <a onClick={handleLogout} to="/" className="nav-links">Đăng xuất</a>
+            <a onClick={handleLogout} href="/" className="nav-links">Đăng xuất</a>
             <Link to="/cart">
                 <Cart className="cart-link"/>
             </Link>
